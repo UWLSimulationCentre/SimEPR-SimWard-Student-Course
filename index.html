@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Password Protected</title>
+        <title>SimEPR & SimWard - Student Course</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, nofollow">
@@ -31,7 +31,7 @@
                 box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
                 border-radius: 3px;
                 min-width: 500px;
-
+                text-align: center;
             }
             .protected__content {
                 padding: 24px 28px;
@@ -82,6 +82,9 @@
             .protected__content__btn:hover {
                 background-color: #1C6D36;
             }
+            .protected__content__logo {
+                margin-bottom: 20px;
+            }
 
         </style>
 
@@ -92,12 +95,14 @@
         <div class="protected">
             <div class="protected__alert" data-id="alert">You entered the wrong password</div>
             <div class="protected__content">
-                <h1 class="protected__content__heading">You need a password to continue</h1>
-                <input class="protected__content__input" data-id="password" type="password" placeholder="password"/>
+                <div class="protected__content__logo">
+                    <img src="/logo.png" alt="Logo" style="width: 70px">
+                </div>
+                <h1 class="protected__content__heading">Please enter the provided password to continue.</h1>
+                <input class="protected__content__input" data-id="password" type="password" placeholder="Enter Password Here..."/>
                 <button data-id="button" type="button" class="protected__content__btn">Continue</button>
             </div>
         </div>
-
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
         <script type="text/javascript">
             "use strict"
